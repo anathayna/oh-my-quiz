@@ -24,10 +24,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dNa-iG-BKa">
-                                <rect key="frame" x="0.0" y="355" width="414" height="106"/>
+                                <rect key="frame" x="0.0" y="353" width="414" height="110"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXt-ge-Snk">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
                                         <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="80"/>
                                         <state key="normal" title="START!">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -59,10 +59,10 @@
             </objects>
             <point key="canvasLocation" x="140.57971014492756" y="120.53571428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz View Controller-->
         <scene sceneID="aWj-C1-kBq">
             <objects>
-                <viewController id="Yr6-ca-jh5" sceneMemberID="viewController">
+                <viewController id="Yr6-ca-jh5" customClass="QuizViewController" customModule="oh_my_quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ebn-cr-vYC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,6 +139,11 @@
                         <viewLayoutGuide key="safeArea" id="YwH-15-8TN"/>
                     </view>
                     <connections>
+                        <outlet property="choice1" destination="wfd-Vy-uhY" id="L19-iZ-UaM"/>
+                        <outlet property="choice2" destination="Itr-82-QAv" id="K5I-vs-9zP"/>
+                        <outlet property="choice3" destination="hLv-2r-4xm" id="fAk-n9-Aby"/>
+                        <outlet property="progressBar" destination="QQg-Xo-Cni" id="buh-N6-u5R"/>
+                        <outlet property="questionLabel" destination="EaT-3d-pe3" id="oJZ-IQ-fdf"/>
                         <segue destination="H2a-s4-Zlm" kind="presentation" identifier="goScore" id="eMO-LI-aLR"/>
                     </connections>
                 </viewController>
@@ -146,10 +151,10 @@
             </objects>
             <point key="canvasLocation" x="808.69565217391312" y="120.53571428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Score View Controller-->
         <scene sceneID="fMf-ZA-fvi">
             <objects>
-                <viewController id="H2a-s4-Zlm" sceneMemberID="viewController">
+                <viewController id="H2a-s4-Zlm" customClass="ScoreViewController" customModule="oh_my_quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xzQ-wz-MMk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		363D92CC24645E8A005276AB /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363D92CB24645E8A005276AB /* Question.swift */; };
+		363D92CE24645E9F005276AB /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363D92CD24645E9F005276AB /* QuizBrain.swift */; };
 		368F926C2457B618003683C1 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 368F925A2457B617003683C1 /* Montserrat-Thin.ttf */; };
 		368F926D2457B618003683C1 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 368F925B2457B617003683C1 /* Montserrat-SemiBoldItalic.ttf */; };
 		368F926E2457B618003683C1 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 368F925C2457B617003683C1 /* Montserrat-ThinItalic.ttf */; };
@@ -36,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		363D92CB24645E8A005276AB /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		363D92CD24645E9F005276AB /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 		368F925A2457B617003683C1 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
 		368F925B2457B617003683C1 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		368F925C2457B617003683C1 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 		368F92102457ACED003683C1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				363D92CB24645E8A005276AB /* Question.swift */,
+				363D92CD24645E9F005276AB /* QuizBrain.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -250,7 +256,9 @@
 			files = (
 				36933E8D24576DA600326E67 /* StartViewController.swift in Sources */,
 				36933E8924576DA600326E67 /* AppDelegate.swift in Sources */,
+				363D92CE24645E9F005276AB /* QuizBrain.swift in Sources */,
 				36DF8AD524630E32009C4F7C /* ScoreViewController.swift in Sources */,
+				363D92CC24645E8A005276AB /* Question.swift in Sources */,
 				36933E8B24576DA600326E67 /* SceneDelegate.swift in Sources */,
 				36DF8AD324630E20009C4F7C /* QuizViewController.swift in Sources */,
 			);
