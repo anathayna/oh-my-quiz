@@ -7,6 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
         <array key="Montserrat-ExtraBold.ttf">
             <string>Montserrat-ExtraBold</string>
         </array>
@@ -89,6 +92,9 @@
                                         <state key="normal" title="Choice 1">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="Yr6-ca-jh5" eventType="touchUpInside" id="O2z-wF-NJM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Itr-82-QAv">
                                         <rect key="frame" x="0.0" y="620" width="374" height="80"/>
@@ -100,6 +106,9 @@
                                         <state key="normal" title="Choice 2">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="Yr6-ca-jh5" eventType="touchUpInside" id="2VL-Vi-kNM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLv-2r-4xm">
                                         <rect key="frame" x="0.0" y="709" width="374" height="80"/>
@@ -111,6 +120,9 @@
                                         <state key="normal" title="Choice 3">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="Yr6-ca-jh5" eventType="touchUpInside" id="aRr-rn-M0P"/>
+                                        </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QQg-Xo-Cni">
                                         <rect key="frame" x="0.0" y="798" width="374" height="11"/>
@@ -159,38 +171,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="omq-ballon" translatesAutoresizingMaskIntoConstraints="NO" id="A9e-ra-h6d">
-                                <rect key="frame" x="0.0" y="202" width="414" height="427"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="omq-ballon" translatesAutoresizingMaskIntoConstraints="NO" id="A9e-ra-h6d">
+                                <rect key="frame" x="0.0" y="171" width="414" height="500"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aJ-eN-rRU">
-                                <rect key="frame" x="0.0" y="329" width="414" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="80"/>
-                                <state key="normal" title="SCORE">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVc-bH-uMJ">
-                                <rect key="frame" x="141" y="820" width="133" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                <state key="normal" title="Play Again!">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcJ-oL-rGW">
-                                <rect key="frame" x="196" y="435" width="23" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="udx-AH-O9M">
+                                <rect key="frame" x="0.0" y="329" width="414" height="159"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aJ-eN-rRU">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="80"/>
+                                        <state key="normal" title="SCORE">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcJ-oL-rGW">
+                                        <rect key="frame" x="0.0" y="110" width="414" height="49"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JyV-J1-Foz">
+                                <rect key="frame" x="0.0" y="754" width="414" height="54"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVc-bH-uMJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                        <state key="normal" title="Play Again!">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playAgainPress:" destination="H2a-s4-Zlm" eventType="touchUpInside" id="bpc-9y-Va4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.26274509800000001" green="0.81176470590000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="udx-AH-O9M" firstAttribute="leading" secondItem="VOI-q7-l3M" secondAttribute="leading" id="4s5-q9-raV"/>
+                            <constraint firstItem="A9e-ra-h6d" firstAttribute="leading" secondItem="VOI-q7-l3M" secondAttribute="leading" id="8u5-Ap-oOO"/>
+                            <constraint firstItem="VOI-q7-l3M" firstAttribute="trailing" secondItem="JyV-J1-Foz" secondAttribute="trailing" id="Hkk-p8-Ao6"/>
+                            <constraint firstItem="udx-AH-O9M" firstAttribute="leading" secondItem="A9e-ra-h6d" secondAttribute="leading" id="TX5-bq-q2i"/>
+                            <constraint firstItem="udx-AH-O9M" firstAttribute="top" secondItem="VOI-q7-l3M" secondAttribute="top" constant="329" id="ex1-jF-aHh"/>
+                            <constraint firstItem="JyV-J1-Foz" firstAttribute="bottom" secondItem="VOI-q7-l3M" secondAttribute="bottom" id="g5g-HZ-OWe"/>
+                            <constraint firstItem="udx-AH-O9M" firstAttribute="centerX" secondItem="xzQ-wz-MMk" secondAttribute="centerX" id="lnK-ZV-d0m"/>
+                            <constraint firstItem="JyV-J1-Foz" firstAttribute="leading" secondItem="VOI-q7-l3M" secondAttribute="leading" id="mov-eb-2vz"/>
+                            <constraint firstItem="A9e-ra-h6d" firstAttribute="centerY" secondItem="xzQ-wz-MMk" secondAttribute="centerY" id="reI-fp-nBS"/>
+                            <constraint firstItem="udx-AH-O9M" firstAttribute="trailing" secondItem="A9e-ra-h6d" secondAttribute="trailing" id="ts0-W9-RCa"/>
+                            <constraint firstItem="A9e-ra-h6d" firstAttribute="trailing" secondItem="VOI-q7-l3M" secondAttribute="trailing" id="xZ0-Jt-PQQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VOI-q7-l3M"/>
                     </view>
                     <connections>
+                        <outlet property="scoreLabel" destination="fcJ-oL-rGW" id="oT1-FA-W55"/>
                         <segue destination="Yr6-ca-jh5" kind="presentation" identifier="goBack" id="8ss-zx-CJT"/>
                     </connections>
                 </viewController>
@@ -200,7 +235,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="eMO-LI-aLR"/>
         <segue reference="8ss-zx-CJT"/>
     </inferredMetricsTieBreakers>
     <resources>

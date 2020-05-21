@@ -49,9 +49,9 @@ class QuizViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToScore" {
+        if segue.identifier == "goScore" {
             let destinationVC = segue.destination as! ScoreViewController
-            destinationVC.score = "Score: \(quizBrain.getScore())!!!"
+            destinationVC.score = "\(quizBrain.getScore())"
         }
     }
     
