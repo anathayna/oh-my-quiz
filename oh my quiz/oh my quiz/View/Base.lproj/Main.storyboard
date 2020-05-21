@@ -235,6 +235,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="eMO-LI-aLR"/>
         <segue reference="8ss-zx-CJT"/>
     </inferredMetricsTieBreakers>
     <resources>
