@@ -78,7 +78,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="1000" text="Question Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaT-3d-pe3">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="478"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -87,9 +87,9 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="eOP-AH-XJQ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="25"/>
                                         <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Choice 1">
+                                        <state key="normal" title="Choice 1" backgroundImage="omq-buttom-b">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -101,9 +101,9 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="F6o-ws-o1B"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="25"/>
                                         <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Choice 2">
+                                        <state key="normal" title="Choice 2" backgroundImage="omq-buttom-b">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -115,9 +115,9 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="iKc-Vy-Ire"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="25"/>
                                         <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Choice 3">
+                                        <state key="normal" title="Choice 3" backgroundImage="omq-buttom-b">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -175,7 +175,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="udx-AH-O9M">
-                                <rect key="frame" x="0.0" y="341.5" width="414" height="159"/>
+                                <rect key="frame" x="0.0" y="311.5" width="414" height="159"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aJ-eN-rRU">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
@@ -193,12 +193,12 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JyV-J1-Foz">
-                                <rect key="frame" x="0.0" y="760" width="414" height="48"/>
+                                <rect key="frame" x="30" y="727" width="354" height="51"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVc-bH-uMJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
-                                        <state key="normal" title="Play Again!">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="51"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="30"/>
+                                        <state key="normal" title="Play Again!" backgroundImage="omq-buttom-b">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -212,12 +212,12 @@
                         <constraints>
                             <constraint firstItem="VOI-q7-l3M" firstAttribute="trailing" secondItem="udx-AH-O9M" secondAttribute="trailing" id="118-t0-fU6"/>
                             <constraint firstItem="udx-AH-O9M" firstAttribute="leading" secondItem="VOI-q7-l3M" secondAttribute="leading" id="AMa-66-8ET"/>
-                            <constraint firstItem="VOI-q7-l3M" firstAttribute="trailing" secondItem="JyV-J1-Foz" secondAttribute="trailing" id="Hkk-p8-Ao6"/>
-                            <constraint firstItem="udx-AH-O9M" firstAttribute="centerY" secondItem="xzQ-wz-MMk" secondAttribute="centerY" id="Koj-9B-n0G"/>
+                            <constraint firstItem="VOI-q7-l3M" firstAttribute="trailing" secondItem="JyV-J1-Foz" secondAttribute="trailing" constant="30" id="Hkk-p8-Ao6"/>
+                            <constraint firstItem="udx-AH-O9M" firstAttribute="centerY" secondItem="xzQ-wz-MMk" secondAttribute="centerY" constant="-30" id="Koj-9B-n0G"/>
                             <constraint firstAttribute="bottom" secondItem="A9e-ra-h6d" secondAttribute="bottom" id="Vze-qJ-hFi"/>
-                            <constraint firstItem="JyV-J1-Foz" firstAttribute="bottom" secondItem="VOI-q7-l3M" secondAttribute="bottom" id="g5g-HZ-OWe"/>
+                            <constraint firstItem="JyV-J1-Foz" firstAttribute="bottom" secondItem="VOI-q7-l3M" secondAttribute="bottom" constant="-30" id="g5g-HZ-OWe"/>
                             <constraint firstItem="A9e-ra-h6d" firstAttribute="trailing" secondItem="VOI-q7-l3M" secondAttribute="trailing" id="iq7-fv-aQQ"/>
-                            <constraint firstItem="JyV-J1-Foz" firstAttribute="leading" secondItem="VOI-q7-l3M" secondAttribute="leading" id="mov-eb-2vz"/>
+                            <constraint firstItem="JyV-J1-Foz" firstAttribute="leading" secondItem="VOI-q7-l3M" secondAttribute="leading" constant="30" id="mov-eb-2vz"/>
                             <constraint firstItem="udx-AH-O9M" firstAttribute="centerX" secondItem="xzQ-wz-MMk" secondAttribute="centerX" id="qEY-Pk-94q"/>
                             <constraint firstItem="A9e-ra-h6d" firstAttribute="leading" secondItem="VOI-q7-l3M" secondAttribute="leading" id="r1k-W4-nAy"/>
                             <constraint firstItem="A9e-ra-h6d" firstAttribute="top" secondItem="VOI-q7-l3M" secondAttribute="top" id="teG-ba-8XS"/>
@@ -235,11 +235,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="eMO-LI-aLR"/>
         <segue reference="8ss-zx-CJT"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="omq-ballon" width="500" height="500"/>
+        <image name="omq-buttom-b" width="242" height="51"/>
         <image name="omq-full-ballon" width="1242" height="2200"/>
     </resources>
 </document>
